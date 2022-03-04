@@ -1,0 +1,37 @@
+.blurry_gradient {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  filter: blur(75px);
+  opacity: 0.9;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(29, 209, 162, 0.6),
+    rgba(115, 239, 207, 0.4)
+  );
+
+  @media screen and (min-width: 768px) {
+    top: 35%;
+    left: 85%;
+    width: 400px;
+    height: 400px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    top: 25%;
+    left: 85%;
+    width: 600px;
+    height: 600px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    top: 20%;
+    left: 85%;
+    width: 600px;
+    height: 600px;
+  }
+}
