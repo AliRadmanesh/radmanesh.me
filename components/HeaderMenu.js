@@ -19,7 +19,7 @@ export default function HeaderMenu({ isMenuVisible, setMenuVisibility }) {
   const pathArray = useRef([]);
   const lightIconWidth = width < 768 ? 32 : 38;
   const MENU_ITEMS = [
-    { id: 1, title: "HOME", link: "/home" },
+    { id: 1, title: "HOME", link: "/" },
     { id: 2, title: "ABOUT", link: "/about" },
     { id: 3, title: "WORKS", link: "/works" },
     { id: 4, title: "SKILLS", link: "/skills" },
