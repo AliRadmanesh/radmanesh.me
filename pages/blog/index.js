@@ -5,7 +5,7 @@ import Head from "next/head";
 import Post from "../../components/Post";
 import { sortByDate } from "../../utils";
 
-export default function Home({ posts }) {
+const Blog = ({ posts }) => {
   return (
     <div>
       <Head>
@@ -23,7 +23,7 @@ export default function Home({ posts }) {
       </div>
     </div>
   );
-}
+};
 
 export async function getStaticProps() {
   // Get files from the posts directory
@@ -54,3 +54,5 @@ export async function getStaticProps() {
     },
   };
 }
+
+export default Blog;
