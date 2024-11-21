@@ -1,19 +1,21 @@
 {
-  "name": "aliradmanesh",
-  "private": true,
-  "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
-  },
-  "devDependencies": {
-    "@biomejs/biome": "1.9.4",
-    "turbo": "^2.2.3",
-    "typescript": "5.5.4"
-  },
-  "packageManager": "pnpm@8.15.6",
-  "engines": {
-    "node": ">=18"
-  }
+	"name": "aliradmanesh",
+	"private": true,
+	"scripts": {
+		"build": "turbo build",
+		"dev": "turbo dev",
+		"format": "biome check .",
+		"format:fix": "biome check . --write",
+		"lint": "biome lint .",
+		"lint:fix": "biome lint . --write"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"turbo": "^2.2.3",
+		"typescript": "5.5.4"
+	},
+	"packageManager": "pnpm@8.15.6",
+	"engines": {
+		"node": ">=18"
+	}
 }
