@@ -1,9 +1,9 @@
-import localFont from 'next/font/local';
+import localFont from "next/font/local";
 
 export const openSansVariableFont = localFont({
-  src: '../public/fonts/OpenSans-VariableFont_wdth,wght.ttf', // localFont looks for the physical file paths relative to where it's imported, so can't use absolute imports!
-  variable: '--font-open-sans',
-  display: 'swap',
+	src: "../public/fonts/OpenSans-VariableFont_wdth,wght.ttf", // localFont looks for the physical file paths relative to where it's imported, so can't use absolute imports!
+	variable: "--font-open-sans",
+	display: "swap",
 });
 
 /**
