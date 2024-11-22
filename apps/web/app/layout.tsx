@@ -1,4 +1,4 @@
-import { openSansVariableFont } from "@/utils/fonts";
+import { interTightVariableFont } from "@/utils/fonts";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={openSansVariableFont.variable}>{children}</body>
+			<body className={interTightVariableFont.variable}>{children}</body>
 		</html>
 	);
 }

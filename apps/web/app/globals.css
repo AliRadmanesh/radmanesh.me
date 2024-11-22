@@ -2,16 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-	max-width: 100vw;
-	overflow-x: hidden;
-}
-
-a {
-	text-decoration: none;
-}
-
 @layer base {
 	:root {
 		--background: 0 0% 100%;
@@ -73,6 +63,9 @@ a {
 		@apply border-border;
 	}
 	body {
-		@apply bg-background text-foreground;
+		@apply bg-background text-foreground max-w-[100vw] overflow-x-hidden font-inter;
+	}
+	a {
+		@apply no-underline;
 	}
 }
