@@ -8,7 +8,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-        inter: ['var(--font-inter-tight)', 'sans-serif'],
+				inter: ["var(--font-inter-tight)", "sans-serif"],
 			},
 			borderRadius: {
 				lg: "var(--radius)",
@@ -33,6 +33,14 @@ module.exports = {
 				secondary: {
 					DEFAULT: "hsl(var(--secondary))",
 					foreground: "hsl(var(--secondary-foreground))",
+				},
+				'primary-blue': {
+					DEFAULT: "hsl(var(--primary-blue))",
+					foreground: "hsl(var(--primary-blue-foreground))",
+				},
+				'secondary-gray': {
+					DEFAULT: "hsl(var(--secondary-gray))",
+					foreground: "hsl(var(--secondary-gray-foreground))",
 				},
 				muted: {
 					DEFAULT: "hsl(var(--muted))",
