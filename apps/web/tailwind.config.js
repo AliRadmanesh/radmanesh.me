@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
 	darkMode: ["class"],
 	content: [
@@ -34,11 +35,11 @@ module.exports = {
 					DEFAULT: "hsl(var(--secondary))",
 					foreground: "hsl(var(--secondary-foreground))",
 				},
-				'primary-blue': {
+				"primary-blue": {
 					DEFAULT: "hsl(var(--primary-blue))",
 					foreground: "hsl(var(--primary-blue-foreground))",
 				},
-				'secondary-gray': {
+				"secondary-gray": {
 					DEFAULT: "hsl(var(--secondary-gray))",
 					foreground: "hsl(var(--secondary-gray-foreground))",
 				},
@@ -65,7 +66,19 @@ module.exports = {
 					5: "hsl(var(--chart-5))",
 				},
 			},
+			height: {
+				header: "80px",
+			},
 		},
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [
+		require("tailwindcss-animate"),
+		({ addBase }) => {
+			addBase({
+				":root": {
+					"--tw-h-header": "80px",
+				},
+			});
+		},
+	],
 };
