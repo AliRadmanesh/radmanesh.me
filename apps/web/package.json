@@ -9,6 +9,8 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@radix-ui/react-navigation-menu": "^1.2.1",
+		"@radix-ui/react-slot": "^1.1.0",
 		"@radmanesh/ui": "workspace:*",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.1",
@@ -20,6 +22,7 @@
 		"tailwindcss-animate": "^1.0.7"
 	},
 	"devDependencies": {
+		"@iconify/react": "^5.0.2",
 		"@radmanesh/typescript-config": "workspace:*",
 		"@types/node": "^20",
 		"@types/react": "^18",
