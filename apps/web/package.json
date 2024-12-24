@@ -22,7 +22,6 @@
 		"tailwindcss-animate": "^1.0.7"
 	},
 	"devDependencies": {
-		"@iconify/react": "^5.0.2",
 		"@radmanesh/typescript-config": "workspace:*",
 		"@types/node": "^20",
 		"@types/react": "^18",
