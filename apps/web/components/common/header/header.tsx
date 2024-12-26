@@ -38,9 +38,9 @@ export const Header = () => (
 						<Button
 							variant="ghost"
 							size="icon"
-							className="rounded-full md:hidden"
+							className="rounded-3xl md:hidden bg-primary-blue px-7"
 						>
-							<Menu className="h-8 w-8 text-gray-500 dark:text-gray-400" />
+							<Menu className="h-8 w-8 text-white dark:text-white" />
 							<span className="sr-only">Toggle navigation menu</span>
 						</Button>
 					</SheetTrigger>
