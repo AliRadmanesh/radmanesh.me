@@ -29,16 +29,18 @@ export const Header = () => (
 				<CodeXml className="h-8 w-8" />
 				<span className="sr-only">Website icon</span>
 			</Link>
+			{/* Desktop */}
 			<nav className="hidden items-center gap-10 text-sm font-medium md:flex">
 				<HeaderItems />
 			</nav>
+			{/* Mobile */}
 			<div className="flex md:hidden items-center gap-4">
 				<Sheet>
 					<SheetTrigger asChild>
 						<Button
 							variant="ghost"
 							size="icon"
-							className="rounded-3xl md:hidden bg-primary-blue px-7"
+							className="rounded-3xl md:hidden bg-primary-blue px-7 hover:bg-primary-blue-dark"
 						>
 							<Menu className="h-8 w-8 text-white dark:text-white" />
 							<span className="sr-only">Toggle navigation menu</span>
