@@ -28,4 +28,4 @@ const Images = () => {
 	);
 };
 
-export default Images;
+export { Images };

@@ -1,5 +1,4 @@
-import { Hero } from "./components/hero";
-import Images from "./components/images";
+import { Hero, Images } from "./components";
 
 const Home = () => {
 	return (
