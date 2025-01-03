@@ -5,6 +5,7 @@ import { CodeXml, Menu } from "lucide-react";
 import Link from "next/link";
 import { headerItems } from "./data";
 
+import { Container } from "../container";
 import styles from "./styles.module.css";
 
 const HeaderItems = ({ mobile }: { mobile?: boolean }) =>
@@ -24,7 +25,7 @@ const HeaderItems = ({ mobile }: { mobile?: boolean }) =>
 
 export const Header = () => (
 	<header className="sticky top-0 z-50 w-full outline outline-1 outline-border bg-white dark:outline-gray-800 dark:bg-gray-950">
-		<div className="container mx-auto flex h-header max-w-6xl items-center justify-between px-4 md:px-6">
+		<Container className="flex h-header max-w-6xl items-center justify-between px-4 md:px-6">
 			<Link href="/" className="flex items-center gap-2" prefetch={false}>
 				<CodeXml className="h-8 w-8" />
 				<span className="sr-only">Website icon</span>
@@ -56,6 +57,6 @@ export const Header = () => (
 					</SheetContent>
 				</Sheet>
 			</div>
-		</div>
+		</Container>
 	</header>
 );
